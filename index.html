@@ -5,52 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amelia Bates - Personal Website</title>
     <style>
+        /* CSS for basic styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: New Times Roman;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #OB6623;
+            color: #0B6623;
         }
         header {
-            background-color: #222;
-            color: #fff;
+            background-color: #fff;
+            color: #0B6623;
             padding: 20px;
-            text-align: center;
+            text-align: Left;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
-            text-align: center;
+            text-align: Left;
         }
         nav ul li {
             display: inline;
             margin: 0 10px;
         }
         nav ul li a {
-            color: #fff;
+            color: #0B6623;
             text-decoration: none;
+           transition: all 0.3s ease;
         }
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+        
         section {
-            padding: 20px;
+            padding: 40px 20px;
             margin: 20px;
             background-color: #fff;
             border-radius: 5px;
+            box-shadow: 0px 0px 10px
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #222;
-            color: #fff;
-            position: fixed;
+            background-color: #fff;
+            color: #0B6623;
+            position: relative;
             bottom: 0;
             width: 100%;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .flex-item {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            .flex-item {
+                flex: 0 0 100%;
+            }
+        }
+        .resume-download-btn {
+            display: inline-block;
+            background-color: #D9DDDC;
+            color: #0B6623;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .resume-download-btn:hover {
+            background-color: #BEBD88;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Amelia Bates</h1>
+        <p> bates.amelia@gmnail.com <p>
+        <p> (503) 998-7221 <p>
+        <a href="C:\Users\bates\Downloads\bates.amelia.resume.pdf" class="resume-download-btn">Download Resume</a>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -61,28 +103,51 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Insert.</p>
-    </section>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies sem vitae sapien ultrices, nec ullamcorper velit volutpat. Integer et ante a elit suscipit feugiat. Nullam rhoncus eget justo nec vehicula.</p>
+        </section>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <<p>Insert.</p>
-    </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h3>Education</h3>
+                    <p>Bachelor's Degree in Computer Science<br>University Name<br>Year: 20XX</p>
+                </div>
+                <div class="flex-item">
+                    <h3>Experience</h3>
+                    <p>Software Engineer<br>Company Name<br>Year: 20XX - Present</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Insert.</p>
-    </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="flex-item">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at: bates.amelia@email.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Amelia Bates</p>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: your@email.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+    </div>
+	<footer>
+    <h3> Amelia Bates </h3>
+    <p> IT Support </p>
+    <p> Eugene, OR </p>
     </footer>
+    
 </body>
 </html>
