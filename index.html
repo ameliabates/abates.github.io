@@ -1,59 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.left {
-  background-color: #2196F3;
-  padding: 20px;
-  float: left;
-  width: 20%; /* The width is 20%, by default */
-}
-
-.main {
-  background-color: #f1f1f1;
-  padding: 20px;
-  float: left;
-  width: 60%; /* The width is 60%, by default */
-}
-
-.right {
-  background-color: #04AA6D;
-  padding: 20px;
-  float: left;
-  width: 20%; /* The width is 20%, by default */
-}
-
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 800px) {
-  .left, .main, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia Bates - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Amelia Bates</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>Amelia Bates</h1>
-<p>Resize the browser window.</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Insert.</p>
+    </section>
 
-<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+    <section id="resume">
+        <h2>Resume</h2>
+        <<p>Insert.</p>
+    </section>
 
-<div class="left">
-  <p>Left Menu</p>
-</div>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Insert.</p>
+    </section>
 
-<div class="main">
-  <p>Main Content</p>
-</div>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at: bates.amelia@email.com</p>
+    </section>
 
-<div class="right">
-  <p>Right Content</p>
-</div>
-
+    <footer>
+        <p>&copy; 2024 Amelia Bates</p>
+    </footer>
 </body>
 </html>
